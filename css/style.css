@@ -1,0 +1,27 @@
+/* PAGE ANIMATIONS */
+.fade-out {
+  animation: 0.4s fade-out ease forwards;
+}
+.fade-in {
+  animation: 0.4s fade-in ease forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  ,
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  ,
+  to {
+    opacity: 1;
+  }
+}
