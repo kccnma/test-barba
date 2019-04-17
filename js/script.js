@@ -12,18 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeOut: function () {
       this.oldContainer.classList.toggle('fade-out');
       this.oldContainer.classList.remove('fade-in');
-      console.log("fading out?");
       return new Promise(function (resolve, reject) {
         window.setTimeout(function () {
           resolve();
-          console.log("resolved?");
-        }, 1000);
+        }, 500);
       });
     },
 
     fadeIn: function () {
       this.newContainer.classList.toggle('fade-in');
-      console.log("fading in?");
+      window.scrollTo(0, 0);
       this.done();
     }
   });
@@ -31,4 +29,5 @@ document.addEventListener("DOMContentLoaded", function () {
   Barba.Pjax.getTransition = function () {
     return FadeTransition;
   };
+
 });

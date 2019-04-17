@@ -1,9 +1,9 @@
 /* PAGE ANIMATIONS */
 .fade-out {
-  animation: 1s fadeout ease forwards;
+  animation: .5s fadeout ease forwards;
 }
 .fade-in {
-  animation: 1s fadein ease forwards;
+  animation: .5s fadein ease forwards;
 }
 
 @keyframes fadeout {
