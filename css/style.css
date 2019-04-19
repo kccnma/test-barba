@@ -1,4 +1,4 @@
-/* PAGE ANIMATIONS */
+/* PAGE TRANSITIONS */
 .fade-out {
   animation: .5s fadeout ease forwards;
 }
@@ -14,4 +14,28 @@
 @keyframes fadein {
   0%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* DEMO STYLES */
+
+h2 {
+  padding: 3em 0;
+  text-align: center;
+  color: #fff;
+  background: #999;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
 }
